@@ -15,7 +15,7 @@ const UserHOC = (props) => {
           <NavLink to="/user/orders">
             <img src={OrdersIcon} alt="Orders Icon" />
           </NavLink>
-          <NavLink to="/user/items">
+          <NavLink to="/user/invoice">
             <img src={BoxIcon} alt="Boxs Icon" />
           </NavLink>
         </div>

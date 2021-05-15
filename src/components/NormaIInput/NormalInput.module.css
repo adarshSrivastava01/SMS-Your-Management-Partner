@@ -1,0 +1,12 @@
+.normalInput {
+    border: 1px solid #f8f6f4;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    position: relative;
+}
+
+.normalInput:focus,
+.normalInput:active {
+    outline: none;
+    border: none;
+}
