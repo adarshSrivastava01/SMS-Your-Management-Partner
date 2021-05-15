@@ -4,9 +4,21 @@ import AddIcon from "../../assets/AddIcon.svg";
 import { Fragment, useState } from "react";
 import Input from "../../components/Input/Input";
 import OrdersInfo from "../../containers/OrdersInfo/OrdersInfo";
+import AddTemplate from "../../components/AddTemplate/AddTemplate";
 
 const Orders = (props) => {
   const [searchValue, setSearchValue] = useState("");
+  const [visible, setVisible] = useState(false);
+
+  const visibleHandler = () => {
+    console.log("Button Clicked", visible);
+    if(visible === false)
+      setVisible(true);
+    else
+      setVisible(false);
+    console.log("later", visible);
+  };
+
   return (
     <Fragment>
       <div className={styles.upper__div}>
@@ -19,6 +31,7 @@ const Orders = (props) => {
             color={"#fff"}
             bgColor={"#08AE54"}
             icon={AddIcon}
+            click={visibleHandler}
           />
         </div>
       </div>
@@ -39,6 +52,7 @@ const Orders = (props) => {
           icon={AddIcon}
         />
       </div>
+      {visible && <AddTemplate click={visibleHandler} />}
       <OrdersInfo />
     </Fragment>
   );
