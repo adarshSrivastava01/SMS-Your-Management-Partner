@@ -1,0 +1,33 @@
+fieldset {
+    border: none;
+    outline: none;
+}
+
+.fs input {
+    border: 1px solid #f8f6f4;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    width: 270%;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.fs input:focus,
+.fs input:active {
+    outline: none;
+    border: none;
+}
+
+.fs img {
+    position: absolute;
+    top: 16.5%;
+    left: 10.5%;
+}
+
+.fs p {
+    position: absolute;
+    top: 16.5%;
+    font-size: 0.7rem;
+    left: 37.5%;
+}

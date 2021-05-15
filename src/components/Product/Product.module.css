@@ -1,0 +1,36 @@
+.Product {
+    display: flex;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+
+.Product td {
+    font-size: 1rem;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.Product td:nth-of-type(3) {
+    max-width: 20%;
+    margin-right: 4rem;
+}
+
+.Product td:first-of-type {
+    margin-right: 5rem;
+}
+
+.Product td:nth-of-type(2) {
+    margin-right: 3rem;
+}
+
+.Product td:nth-of-type(4) {
+    margin-right: 12rem;
+}
+
+.Product td:nth-of-type(5) {
+    margin-right: 7.5rem;
+}

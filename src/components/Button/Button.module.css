@@ -1,0 +1,17 @@
+.Button {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.additional__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+}

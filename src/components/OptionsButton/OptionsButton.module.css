@@ -1,0 +1,17 @@
+.OptionsButton {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(7, 152, 73, 0.7);
+    padding: 0.3rem 0.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.OptionsButton p {
+    color: #08AE54;
+}

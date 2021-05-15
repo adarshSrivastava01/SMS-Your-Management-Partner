@@ -1,0 +1,32 @@
+.dashboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left__nav {
+  background-color: #040508;
+  width: 8%;
+  padding: 3.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.icons {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons img {
+  height: 32px;
+  width: 32px;
+}
+
+.right__side {
+  width: 100%;
+  background-color: rgba(248, 246, 244, 0.4);;
+  padding: 2rem 2.5rem;
+}
