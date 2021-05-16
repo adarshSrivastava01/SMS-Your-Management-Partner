@@ -1,0 +1,59 @@
+.upper__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(122, 142, 133, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2.6rem;
+}
+
+.invoice__heading {
+  font-size: 2.4rem;
+}
+
+.middle__div {
+  max-width: 500px;
+  width: 35%;
+  font-weight: 300;
+  color: #7a8e85;
+  font-size: 1rem;
+  margin-bottom: 2.6rem;
+}
+
+.data__div {
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SIN__field {
+  padding: 1.4rem 1.2rem;
+  font-size: 1rem;
+  background: rgba(248, 246, 244, 0.4);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.SIN__field div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.int__heading {
+  margin-bottom: 2rem;
+}
+
+.relation__icon {
+    display: flex;
+}
+
+.relation__icon div:first-of-type {
+    margin-right: 1.5rem;
+}

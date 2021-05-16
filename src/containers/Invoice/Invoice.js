@@ -58,6 +58,7 @@ const Invoice = (props) => {
             </div>
           </div>
           <div className={styles.fields}>
+            <input type="checkbox" />
             <NormalInput
               value={created}
               setValue={setCreated}
@@ -111,6 +112,12 @@ const Invoice = (props) => {
           />
         </div>
       </div>
+      <Button
+        text="Save Invoice"
+        disabled={false}
+        color={"#fff"}
+        bgColor={"#08AE54"}
+      />
     </Fragment>
   );
 };

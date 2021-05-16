@@ -8,7 +8,7 @@ const NormalInput = (props) => {
       value={props.value}
       onChange={(e) => props.setValue(e.target.value)}
       placeholder={props.placeholder}
-      style={{width: `${props.width}`}}
+      style={{width: `${props.width}`, ...props.style}}
     />
   );
 };

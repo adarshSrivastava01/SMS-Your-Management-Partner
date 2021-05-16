@@ -4,4 +4,8 @@
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+    max-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
