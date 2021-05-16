@@ -8,12 +8,25 @@ import ReactTagInput from "@pathofdev/react-tag-input";
 import "@pathofdev/react-tag-input/build/index.css";
 import RelationFirst from "../../assets/RelationShip 1.svg";
 import RelationSecond from "../../assets/RelationShip 2.svg";
+import { Dropdown, Selection } from "react-dropdown-now";
+import "react-dropdown-now/style.css";
 
 const Template = (props) => {
   const [SIN, setSIN] = useState("");
   const [tags, setTags] = useState([]);
   return (
     <Fragment>
+      <style global jsx>
+        {`
+          .rdn {
+            background-color: green;
+            width: 15rem;
+          }
+          .rdn-control {
+            max-height: 2.6rem;
+          }
+        `}
+      </style>
       <div className={styles.upper__div}>
         <div className={styles.invoice__heading}>Template Name</div>
         <StatusButton color="red" text="Cancel" />
@@ -38,11 +51,14 @@ const Template = (props) => {
           <div>Enter SIN</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Select Status"
+          options={["One", "Two", "Three"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
       </div>
       <div className={styles.SIN__field}>

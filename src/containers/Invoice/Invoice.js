@@ -4,6 +4,8 @@ import StatusButton from "../../components/StatusButton/StatusButton";
 import NormalInput from "../../components/NormaIInput/NormalInput";
 import Button from "../../components/Button/Button";
 import AddIcon from "../../assets/AddIcon.svg";
+import { Dropdown, Selection } from "react-dropdown-now";
+import "react-dropdown-now/style.css";
 
 const Invoice = (props) => {
   const [SIN, setSIN] = useState("");
@@ -88,11 +90,25 @@ const Invoice = (props) => {
       </div>
       <div className={styles.SIN__field}>
         <div>Status</div>
-        <NormalInput
+        <style global jsx>
+          {`
+            .rdn {
+              background-color: green;
+              width: 15rem;
+            }
+            .rdn-control {
+              max-height: 2.6rem;
+            }
+          `}
+        </style>
+        <Dropdown
+          placeholder="Select Status"
+          options={["One", "Two", "Three"]}
           value={status}
-          setValue={setStatus}
-          placeholder="Here will go the information entered by the user."
-          width="15%"
+          onChange={(value) => setStatus(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
       </div>
       <div className={styles.cons__field}>
