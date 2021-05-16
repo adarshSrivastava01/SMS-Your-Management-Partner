@@ -1,6 +1,7 @@
 import "./App.css";
 import UserDashboard from "./containers/UserDashboard/UserDashboard";
 import Auth from "./Auth/Auth";
+import FourOFour from "./components/FourOFour/FourOFour";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
           render={() => (
             <Auth
               isSignup={false}
-              message={"Not the data management you need, but the one you want."}
+              message={
+                "Not the data management you need, but the one you want."
+              }
               btn={"Signup"}
               text={"Login"}
             />
@@ -31,6 +34,7 @@ function App() {
           )}
         />
         <Route path="/user" render={() => <UserDashboard />} />
+        <Route path="*" render={() => <FourOFour />} />
       </Switch>
     </div>
   );
