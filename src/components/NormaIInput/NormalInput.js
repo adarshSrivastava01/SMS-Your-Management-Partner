@@ -4,7 +4,7 @@ const NormalInput = (props) => {
   return (
     <input
       className={styles.normalInput}
-      type="type"
+      type={props.type}
       value={props.value}
       onChange={(e) => props.setValue(e.target.value)}
       placeholder={props.placeholder}
