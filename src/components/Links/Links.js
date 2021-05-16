@@ -11,6 +11,7 @@ const Links = (props) => {
         backgroundColor: `${
           props.color === "black" ? "#fff" : "rgba(8, 174, 84, 0.7)"
         }`,
+        borderColor: `${props.color === "black" ? "#000" : "rgba(8, 174, 84, 0.7)"}`
       }}
     >
       {props.text}

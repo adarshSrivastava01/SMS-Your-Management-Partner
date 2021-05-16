@@ -12,10 +12,11 @@ const Orders = (props) => {
 
   const visibleHandler = () => {
     console.log("Button Clicked", visible);
-    if(visible === false)
-      setVisible(true);
-    else
-      setVisible(false);
+    // if(visible === false)
+    //   setVisible(true);
+    // else
+    //   setVisible(false);
+    setVisible(!visible)
     console.log("later", visible);
   };
 
@@ -52,7 +53,7 @@ const Orders = (props) => {
           icon={AddIcon}
         />
       </div>
-      {visible && <AddTemplate click={visibleHandler} />}
+      {visible && <AddTemplate show={visible} click={visibleHandler} />}
       <OrdersInfo />
     </Fragment>
   );

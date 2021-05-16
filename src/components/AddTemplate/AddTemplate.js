@@ -2,7 +2,7 @@ import styles from "./AddTemplate.module.css";
 import Links from "../Links/Links";
 
 const AddTemplate = (props) => {
-  return props.visible ? (
+  return props.show ? (
     <div className={styles.backdrop} onClick={props.click}>
       <div className={styles.modal}>
         <div className={styles.heading}>Choose Template</div>
@@ -11,7 +11,7 @@ const AddTemplate = (props) => {
             <Links to="/user/invoice" text="Invoice" color="black" />
             <Links to="/user/outvoice" text="Outvoice" color="black" />
             <Links to="/user/products" text="Products" color="black" />
-            <Links to="/user/newtemplate" text="New Template" color="green" />
+            <Links to="/user/template" text="New Template" color="green" />
           </div>
         </div>
       </div>
