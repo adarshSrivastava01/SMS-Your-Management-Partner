@@ -9,8 +9,7 @@ const AddTemplate = (props) => {
         <div className={styles.links}>
           <div className={styles.link__container}>
             <Links to="/user/invoice" text="Invoice" color="black" />
-            <Links to="/user/outvoice" text="Outvoice" color="black" />
-            <Links to="/user/products" text="Products" color="black" />
+          
             <Links to="/user/template" text="New Template" color="green" />
           </div>
         </div>

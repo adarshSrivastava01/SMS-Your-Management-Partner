@@ -19,6 +19,7 @@ const Auth = (props) => {
 
   const authSubmitHandler = (e) => {
     e.preventDefault();
+    history.push("/user/orders")
   };
 
   return (
@@ -77,7 +78,7 @@ const Auth = (props) => {
               text={props.isSignup ? "Sign up" : "Login"}
               color={"#ffffff"}
               bgColor={"rgba(8, 174, 84, 0.7)"}
-              click={authChangeHandler}
+              click={authSubmitHandler}
             />
           </div>
         </form>
