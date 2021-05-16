@@ -2,7 +2,7 @@ import styles from "./Auth.module.css";
 import { Fragment, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Button from "../components/Button/Button";
-import AuthIcon from "../assets/BoxIcon.svg";
+import AuthIcon from "../assets/data.svg";
 import NormalInput from "../components/NormaIInput/NormalInput";
 
 const Auth = (props) => {
@@ -13,8 +13,8 @@ const Auth = (props) => {
 
   const authChangeHandler = (e) => {
     e.preventDefault();
-    if (props.isSignup) history.push("/auth/login");
-    else history.push("/auth/signup");
+    if (props.isSignup) history.push("/");
+    else history.push("/signup");
   };
 
   const authSubmitHandler = (e) => {
@@ -76,7 +76,7 @@ const Auth = (props) => {
             <Button
               text={props.isSignup ? "Sign up" : "Login"}
               color={"#ffffff"}
-              bgColor={"#08AE54"}
+              bgColor={"rgba(8, 174, 84, 0.7)"}
               click={authChangeHandler}
             />
           </div>

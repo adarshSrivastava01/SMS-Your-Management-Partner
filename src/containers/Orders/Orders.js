@@ -5,7 +5,7 @@ import { Fragment, useState } from "react";
 import Input from "../../components/Input/Input";
 import OrdersInfo from "../../containers/OrdersInfo/OrdersInfo";
 import AddTemplate from "../../components/AddTemplate/AddTemplate";
-
+import DropDown from "../../assets/dropdown.svg"
 const Orders = (props) => {
   const [searchValue, setSearchValue] = useState("");
   const [visible, setVisible] = useState(false);
@@ -25,7 +25,13 @@ const Orders = (props) => {
       <div className={styles.upper__div}>
         <div className={styles.orders__heading}>Orders</div>
         <div className={styles.orders__buttons}>
-          <div className={styles.export__button}>Export</div>
+        <Button
+            text={"Export"}
+            disabled={false}
+            color={"#000"}
+            bgColor={"#fff"}
+            icon={DropDown}
+          />
           <Button
             text={"Create New"}
             disabled={false}
@@ -38,7 +44,7 @@ const Orders = (props) => {
       </div>
       <div className={styles.search__row}>
         <Input type="text" value={searchValue} setValue={setSearchValue} />
-        <Button
+        {/* <Button
           text={"Create New"}
           disabled={false}
           color={"#fff"}
@@ -51,7 +57,7 @@ const Orders = (props) => {
           color={"#fff"}
           bgColor={"#08AE54"}
           icon={AddIcon}
-        />
+        /> */}
       </div>
       {visible && <AddTemplate show={visible} click={visibleHandler} />}
       <OrdersInfo />

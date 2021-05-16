@@ -17,7 +17,7 @@ const OrdersInfo = (props) => {
   return (
     <Fragment>
       <div className={styles.options}>
-        <OptionsButton text={"All"} number={69} />
+        <OptionsButton active={true} text={"All"} number={69} />
         <OptionsButton text={"Invoices"} number={214} />
         <OptionsButton text={"Outvoice"} number={619} />
       </div>

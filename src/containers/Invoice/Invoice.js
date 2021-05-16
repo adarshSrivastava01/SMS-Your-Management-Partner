@@ -6,19 +6,22 @@ import Button from "../../components/Button/Button";
 import AddIcon from "../../assets/AddIcon.svg";
 import { Dropdown, Selection } from "react-dropdown-now";
 import "react-dropdown-now/style.css";
-
+import {useHistory} from "react-router-dom";
 const Invoice = (props) => {
+  const history = useHistory();
   const [SIN, setSIN] = useState("");
   const [created, setCreated] = useState("");
   const [status, setStatus] = useState("");
   const [totalPrice, setTotalPrice] = useState("");
   const [totalProducts, setTotalProducts] = useState("");
-
+  const takeTo = ()=>{
+    history.push("/user/orders")
+  }
   return (
     <Fragment>
       <div className={styles.upper__div}>
         <div className={styles.invoice__heading}>Invoice</div>
-        <StatusButton color="red" text="Cancel" />
+        <StatusButton click={takeTo} color="red" text="Cancel" />
       </div>
       <div className={styles.middle__div}>
         You can add some information related to this order here. In case you
@@ -44,7 +47,7 @@ const Invoice = (props) => {
           width="20%"
         />
       </div>
-      <div className={styles.SIN__field}>
+      {/* <div className={styles.SIN__field}>
         <div className={styles.products__row}>
           <div className={styles.products__upper}>
             <div className={styles.products__heading}>Products</div>
@@ -87,7 +90,7 @@ const Invoice = (props) => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles.SIN__field}>
         <div>Status</div>
         <style global jsx>

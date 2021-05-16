@@ -8,10 +8,10 @@ import { useHistory } from "react-router-dom";
 const FourOFour = (props) => {
   const history = useHistory();
   const redirectToLogin = () => {
-    history.push("/auth/login");
+    history.push("/");
   };
   const redirectToSignup = () => {
-    history.push("/auth/signup");
+    history.push("/signup");
   };
   return (
     <Fragment>

@@ -5,11 +5,14 @@
     display: flex;
     justify-content: space-around;
     color: #000;
-    font-size: 1rem;
-    border-bottom: 2px solid rgba(7, 152, 73, 0.7);
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
     padding: 0.3rem 0.5rem;
     margin-right: 1.5rem;
     cursor: pointer;
+}
+.active{
+    border-bottom: 2px solid rgba(7, 152, 73, 0.2);
 }
 
 .OptionsButton p {

@@ -11,7 +11,7 @@ const UserDashboard = (props) => {
   return (
     <UserHOC>
       <Switch>
-        <Route path="/user" exact render={() => <h1>Home</h1>} />
+        <Route path="/user" exact render={() => <h1>Here User Analyics will be shown</h1>} />
         <Route path="/user/orders" render={() => <Orders />} />
         <Route path="/user/invoice" render={() => <Invoice />} />
         <Route path="/user/template" exact render={() => <Template />} />

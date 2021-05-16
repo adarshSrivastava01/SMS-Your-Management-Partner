@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 import AddIcon from "../../assets/AddIcon.svg";
-
 const Button = (props) => {
+
   let obj = {};
   if (props.color) {
     obj["color"] = props.color;

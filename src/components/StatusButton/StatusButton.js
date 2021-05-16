@@ -3,6 +3,7 @@ import styles from "./StatusButton.module.css";
 const StatusButton = (props) => {
   return (
     <div
+    onClick={props.click}
       className={styles.StatusButton}
       style={{
         borderColor: `${

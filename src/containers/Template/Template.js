@@ -6,8 +6,8 @@ import AddIcon from "../../assets/AddIcon.svg";
 import NormalInput from "../../components/NormaIInput/NormalInput";
 import ReactTagInput from "@pathofdev/react-tag-input";
 import "@pathofdev/react-tag-input/build/index.css";
-import RelationFirst from "../../assets/RelationShip 1.svg";
-import RelationSecond from "../../assets/RelationShip 2.svg";
+import RelationFirst from "../../assets/oneToMany.svg";
+import RelationSecond from "../../assets/manyToOne.svg";
 import { Dropdown, Selection } from "react-dropdown-now";
 import "react-dropdown-now/style.css";
 
@@ -63,51 +63,62 @@ const Template = (props) => {
       </div>
       <div className={styles.SIN__field}>
         <div>
-          <div>Enter SIN</div>
+          <div>Name Of Product</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Text Field"
+          options={["One", "Two", "Three"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
       </div>
       <div className={styles.SIN__field}>
         <div>
-          <div>Enter SIN</div>
+          <div>Enter Quantity</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Number"
+          options={["One", "Two", "Three"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
       </div>
       <div className={styles.SIN__field}>
         <div>
-          <div>Enter SIN</div>
+          <div>Status</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Boolean"
+          options={["Cancelled","Completed"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
       </div>
       <div className={styles.SIN__field}>
         <div>
-          <div>Enter SIN</div>
+          <div>Multiple Choices</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Multiple"
+          options={["One", "Two", "Three"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
-          style={{ marginBottom: "2rem" }}
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
         <style global jsx>
           {`
@@ -150,29 +161,20 @@ const Template = (props) => {
           placeholder={"Press Enter Tags Here"}
         />
       </div>
+     
       <div className={styles.SIN__field}>
         <div>
           <div>Enter SIN</div>
           <StatusButton color="red" text="Cancel" />
         </div>
-        <NormalInput
+        <Dropdown
+          placeholder="Another Template"
+          options={["Products","Outvoice"]}
           value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
-        />
-      </div>
-      <div className={styles.SIN__field}>
-        <div>
-          <div>Enter SIN</div>
-          <StatusButton color="red" text="Cancel" />
-        </div>
-        <NormalInput
-          value={SIN}
-          setValue={setSIN}
-          placeholder="Here will go the information entered by the user."
-          width="35%"
-          style={{ marginBottom: "2rem" }}
+          onChange={(value) => setSIN(value)}
+          onSelect={(value) => console.log("Hovered")}
+          onClose={(closedBySelection) => console.log("Closed by Selection")}
+          onOpen={() => console.log("Opened")}
         />
         <div className={styles.int__heading}>Enter all the tags</div>
         <NormalInput
@@ -182,7 +184,7 @@ const Template = (props) => {
           width="35%"
           style={{ marginBottom: "2rem" }}
         />
-        <div className={styles.int__heading}>Connection Type</div>
+        <div className={styles.int__heading}>Connection Type : Template have many Products</div>
         <div className={styles.relation__icon}>
           <div>
             <img src={RelationFirst} alt={"Relation Icon"} />

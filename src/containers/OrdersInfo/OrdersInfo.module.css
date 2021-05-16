@@ -6,8 +6,9 @@
 .count__results {
   color: #7a8e85;
   background-color: #fff;
-  font-size: 1.2rem;
-  padding: 1.2rem 1.2rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  padding: 1.2rem 0rem;
 }
 
 table {
@@ -17,11 +18,13 @@ table {
 table thead {
   display: flex;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem 0;
   text-align: left;
 }
-
+table thead th:first-child{
+  font-weight: 500;
+}
 table thead th:not(:first-child) {
   font-weight: 300;
   color: #7a8e85;

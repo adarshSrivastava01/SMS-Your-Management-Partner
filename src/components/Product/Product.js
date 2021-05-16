@@ -10,7 +10,7 @@ const Product = (props) => {
       <td>{props.data.price}</td>
       <td>{props.data.totalProducts}</td>
       <td>
-        {props.data.status === "completed" ? (
+        {props.data.status !== "completed" ? (
           <StatusButton borderColor="red" color="red" text={"Failed"} />
         ) : (
           <StatusButton borderColor="green" color="green" text={"Completed"} />

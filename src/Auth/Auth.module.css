@@ -1,5 +1,5 @@
 .auth__header {
-  height: 7rem;
+  height: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
   display: flex;
@@ -11,7 +11,7 @@
 .auth__header p {
     color: #ffffff;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 .auth__body {

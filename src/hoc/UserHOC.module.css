@@ -20,9 +20,10 @@
   justify-content: space-between;
 }
 
-.icons img {
+.icons svg {
   height: 32px;
   width: 32px;
+  fill: #fff;
 }
 
 .right__side {

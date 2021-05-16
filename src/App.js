@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/" exact render={() => <h1>Landing Page</h1>} />
         <Route
-          path="/auth/login"
+          path="/"
+          exact
           render={() => (
             <Auth
               isSignup={false}
@@ -23,7 +23,7 @@ function App() {
           )}
         />
         <Route
-          path="/auth/signup"
+          path="/signup"
           render={() => (
             <Auth
               isSignup={true}
