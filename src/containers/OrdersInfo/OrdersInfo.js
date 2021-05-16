@@ -34,6 +34,7 @@ const OrdersInfo = (props) => {
           <th>Status</th>
         </thead>
         <tbody>
+          {/* <Product data={data} />
           <Product data={data} />
           <Product data={data} />
           <Product data={data} />
@@ -43,8 +44,7 @@ const OrdersInfo = (props) => {
           <Product data={data} />
           <Product data={data} />
           <Product data={data} />
-          <Product data={data} />
-          <Product data={data} />
+          <Product data={data} /> */}
         </tbody>
       </table>
     </Fragment>
